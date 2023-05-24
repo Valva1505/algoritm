@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al`debaran</title>
+</head>
+<body>
+    <h1>Показатели</h1>
+    <form action="#" class="form" method="post" name="form" novalidate>
+                <fieldset class="form__set">
+                    <label class="form__field">
+                        <h3>Cуицидальный риск по ВОЗ выше среднего</h3>
+                        <input id="suicid" type="checkbox" name="suicid"
+                            class="form__input form__input_type_suicid form__input_type_error" value="" required>
+                        <span class="suicid-error form__input-error"></span>
+                    </label>
+                    <label class="form__field">
+                    <h3>Шкала открыто проявляемой агрессии (OASCL)</h3>
+                        <input id="oascl" type="number" name="oascl"
+                            class="form__input form__input_type_oascl form__input_type_error" placeholder="Введите балл"
+                            min=0 max=12 value="" required>
+                        <span class="oascl-error form__input-error"></span>
+                    </label>
+                    <label class="form__field">
+                        <h3>Шкала медикаментозного комплаенса</h3>
+                        <input id="complance" type="number" name="complance"
+                            class="form__input form__input_type_complance form__input_type_error"
+                            placeholder="Введите балл" min=0 max=54 value="" required>
+                        <span class="complance-error form__input-error"></span>
+                    </label>
+                    <label class="form__field">
+                        <h3>Шкала оценки социальной поддержки (MSPSS)</h3>
+                        <input id="mspss" type="number" name="mspss"
+                            class="form__input form__input_type_mspss form__input_type_error"
+                            placeholder="Введите балл" min=0 max=12 value="" required>
+                        <span class="mspss-error form__input-error"></span>
+                    </label>
+                    <label class="form__field">
+                        <h3>Интернализированная стигма психического расстройства (ISMI-10)</h3>
+                        <input id="ismi" type="number" name="ismi"
+                            class="form__input form__input_type_ismi form__input_type_error"
+                            placeholder="Введите балл" min=0 max=4 step="0.1" value="" required>
+                        <span class="ismi-error form__input-error"></span>
+                    </label>
+                    <button type="submit" class="form__button-submit">Добавить</button>
+                </fieldset>
+            </form>
+    <h2>Рекомендации</h2>
+    <p class="recommendations"></p>
+<script src="js.js"></script>
+</body>
+</html>
